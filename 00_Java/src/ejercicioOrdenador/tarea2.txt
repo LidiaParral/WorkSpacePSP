@@ -1,0 +1,15 @@
+Crear un modelo que encapsule la información referente a una ORDENADOR orientada
+ a su alquiler
+ 
+ La casa podra almacenar lo siguiente:
+ 	- Una RAMs
+ 		- tendra una capacidad, tendra una marca, y una velocidad
+ 	- Unas discosduros
+ 		- Los discosduras tendrán capacidad, un tipo de discoduro
+ 		 y un numero de habitacion
+ 	- Una placa base
+ 		- marca, precio, modelo
+ 	- Una tarjeta grafica
+ 		- marca, modelo, potencia de calculo
+ 	- un precio del ordenador
+ 	

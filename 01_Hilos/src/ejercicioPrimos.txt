@@ -1,0 +1,9 @@
+Pedimos 3 numeros a un usuario por pantalla, a partir de esos numeros
+arrancamos 3 hilos y que cada hilo diga si el numero que le pasamos 
+es primo o no es primo
+
+Bonus, mostrar el tiempo de ejecucion de cada hilo
+
+- La clase date guarda el tiempo en milisegundos desde el año 1970
+Date date = new Date();
+date.getTime() //nos devuelve el numero de milisegundos
