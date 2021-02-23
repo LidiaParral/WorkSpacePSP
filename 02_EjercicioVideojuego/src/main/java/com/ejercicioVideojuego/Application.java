@@ -8,6 +8,9 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
+		
+		//Crear el objeto @Component
+		//Iniciar el objeto, introducir valores
 	}
 
 }

@@ -12,7 +12,13 @@ public class Videojuego {
 	private String compania;
 	private double precio;
 	
-	
+	public Videojuego() {
+		id= 1;
+		nombre = "Fortnite";
+		compania = "Epic Games";
+		precio = 22.70;
+		
+	}
 	
 	public int getId() {
 		return id;
