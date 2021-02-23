@@ -21,12 +21,14 @@ public class DaoVideojuego {
 		v1.setNombre("Sony");
 		v1.setCompania("Sega");
 		v1.setPrecio(15.50);
+		v1.setPuntuacion(8);
 		
 		Videojuego v2 = new Videojuego();
 		v2.setId(contador++);
 		v2.setNombre("Fortnite");
 		v2.setCompania("Epic Games");
 		v2.setPrecio(49.50);
+		v2.setPuntuacion(5);
 		
 
 		listaVideojuegos = new ArrayList<Videojuego>();
@@ -62,13 +64,26 @@ public class DaoVideojuego {
 		return v;
 	}
 	
+	/**
+	 * Método para insertar un videojuego
+	 * 
+	 * @param v, parámetro de un objeto de tipo VIDEOJUEGO 
+	 * @return Videojuego insertado
+	 */
+	public Videojuego alta(Videojuego v) {
+		v.setId(contador++);
+		listaVideojuegos.add(v);
+		return v;
+
+	}
+
 	
 	/**
-	 * Método que modifica una persona a partir de un ID
+	 * Método que modifica un videojuego a partir de un ID
 	 * 
-	 * @param pModif, persona que se quiere modificar, dentro del atributo ID
+	 * @param vModif, videojuego que se quiere modificar, dentro del atributo ID
 	 *                contendrá el ID que se quiere modificar
-	 * @return Persona modificada o NULL en caso de que no encontraramos la persona
+	 * @return Videojuego modificada o NULL en caso de que no encontraramos el videojuego
 	 */
 	public Videojuego modificar(Videojuego vModif) {
 		// Búsqueda del videojuego
@@ -76,9 +91,30 @@ public class DaoVideojuego {
 
 		// Si el VIDEOJUEGO exise, se modifican los valores de dicho videojuego
 		if (v != null) {
+			v.setNombre(vModif.getNombre());
+			v.setCompania(vModif.getCompania());
 			v.setPrecio(vModif.getPrecio());
+			v.setPuntuacion(vModif.getPuntuacion());
+			
 		}
 		return v;
+	}
+	
+	
+	/**
+	 * Método que borra un videojuego a partir de un ID
+	 * @param id, representa el ID a buscar
+	 * @return Videojuego borrado o NULL, en caso de que no encontraramos el videojuego
+	 */
+	public Videojuego borrar(int id) {
+		Videojuego v = buscar(id);
+
+		if (v != null) {
+			listaVideojuegos.remove(id);
+
+		}
+		return v;
+
 	}
 	
 }

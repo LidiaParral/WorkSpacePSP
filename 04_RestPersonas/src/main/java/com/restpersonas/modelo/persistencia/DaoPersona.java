@@ -1,11 +1,9 @@
 package com.restpersonas.modelo.persistencia;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import com.restpersonas.modelo.entidad.Persona;
 

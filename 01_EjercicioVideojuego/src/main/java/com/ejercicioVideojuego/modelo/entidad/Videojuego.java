@@ -1,15 +1,12 @@
 package com.ejercicioVideojuego.modelo.entidad;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
-
 public class Videojuego {
 
 	private int id;
 	private String nombre;
 	private String compania;
 	private double precio;
+	private int puntuacion;
 	
 	
 	public int getId() {
@@ -36,10 +33,19 @@ public class Videojuego {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
+	public int getPuntuacion() {
+		return puntuacion;
+	}
+	public void setPuntuacion(int puntuacion) {
+		this.puntuacion = puntuacion;
+	}
 	@Override
 	public String toString() {
-		return "Videojuego - id:" + id + ", nombre:" + nombre + ", compañía:" + compania + ", precio:" + precio + " euros.";
+		return "Videojuego - id:" + id + ", nombre:" + nombre + ", compañía:" + compania + ", precio:" + precio
+				+ " euros, puntuación:" + puntuacion;
 	}
+	
+	
 	
 	
 

@@ -5,8 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -57,6 +59,17 @@ public class ControladorVideojuego {
 	}
 	
 	
+	// Para dar de alta un OBJETO se usa POST
+	@PostMapping("videojuegos")
+	public ResponseEntity<Videojuego> alta(@RequestBody Videojuego v) {
+		Videojuego vAlta = daoVideojuego.alta(v);
+
+		ResponseEntity<Videojuego> re = new ResponseEntity<Videojuego>(vAlta, HttpStatus.CREATED);
+
+		return re;
+
+	}
+	
 	// Para modificar un OBJETO se usa PUT
 	@PutMapping("videojuegos/{id}")
 	public ResponseEntity<Videojuego> modifica(@RequestBody Videojuego v, @PathVariable("id") int id_videojuego) {
@@ -68,7 +81,6 @@ public class ControladorVideojuego {
 
 		HttpStatus hs = null;
 
-		// Si la persona existe
 		if (vModif != null) {
 			hs = HttpStatus.OK;
 		} else {
@@ -81,6 +93,26 @@ public class ControladorVideojuego {
 
 	}
 	
+	// Para eliminar un OBJETO se usa DELETE
+	@DeleteMapping("videojuegos/{id}")
+	public ResponseEntity<Videojuego> borrar(@PathVariable("id") int id_videojuego) {
+
+		Videojuego vDel = daoVideojuego.borrar(id_videojuego);
+
+		HttpStatus hs = null;
+
+
+		if (vDel != null) {
+			hs = HttpStatus.OK;
+		} else {
+			hs = HttpStatus.NOT_FOUND;
+		}
+
+		ResponseEntity<Videojuego> re = new ResponseEntity<Videojuego>(vDel, hs);
+
+		return re;
+
+	}
 	
 }
 
