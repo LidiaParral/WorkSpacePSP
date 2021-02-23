@@ -3,8 +3,7 @@ package com.ejercicioVideojuego.modelo.entidad;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
-@Scope("prototype")
+
 public class Videojuego {
 
 	private int id;
@@ -36,6 +35,10 @@ public class Videojuego {
 	}
 	public void setPrecio(double precio) {
 		this.precio = precio;
+	}
+	@Override
+	public String toString() {
+		return "Videojuego - id:" + id + ", nombre:" + nombre + ", compañía:" + compania + ", precio:" + precio + " euros.";
 	}
 	
 	
