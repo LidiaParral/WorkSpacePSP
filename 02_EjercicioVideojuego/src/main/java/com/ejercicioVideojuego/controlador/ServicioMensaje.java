@@ -11,28 +11,25 @@ import com.ejercicioVideojuego.modelo.entidad.Videojuego;
 @RestController
 public class ServicioMensaje {
 	
-	//@Autowired injectar el objeto en el controlador
 	@Autowired
 	private Videojuego v1;
 	
-	
 	@GetMapping("videojuego")
 	public Videojuego obtenerVideojuego() {
+		
+		v1.setNombre("Fortnite");
+		v1.setCompania("Epic Games");
+		v1.setPrecio(22.70);
+		
 		return v1;
 	}
 	
 	
-	//Método MODIFICAR
+	//*Método MODIFICAR
 	@PutMapping("videojuego")
 	public Videojuego modificar() {
-		System.out.println("Modificar precio:");
 		v1.setPrecio(v1.getPrecio() + 10);
-		System.out.println("Modificación exitosa");
 		return v1;
 	}
-	
-	
-	
 
-	
 }

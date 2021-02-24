@@ -10,7 +10,7 @@ import com.ejercicioVideojuego.modelo.entidad.Videojuego;
 @Component
 public class DaoVideojuego {
 	
-	private List<Videojuego> listaVideojuegos;
+	public List<Videojuego> listaVideojuegos;
 
 	private int contador = 1;
 
@@ -108,11 +108,11 @@ public class DaoVideojuego {
 	 */
 	public Videojuego borrar(int id) {
 		Videojuego v = buscar(id);
-
-		if (v != null) {
-			listaVideojuegos.remove(id);
-
-		}
+		 
+		 listaVideojuegos.remove(v);
+		
+		
+		
 		return v;
 
 	}

@@ -99,16 +99,7 @@ public class ControladorVideojuego {
 
 		Videojuego vDel = daoVideojuego.borrar(id_videojuego);
 
-		HttpStatus hs = null;
-
-
-		if (vDel != null) {
-			hs = HttpStatus.OK;
-		} else {
-			hs = HttpStatus.NOT_FOUND;
-		}
-
-		ResponseEntity<Videojuego> re = new ResponseEntity<Videojuego>(vDel, hs);
+		ResponseEntity<Videojuego> re = new ResponseEntity<Videojuego>(vDel, HttpStatus.ACCEPTED);
 
 		return re;
 
