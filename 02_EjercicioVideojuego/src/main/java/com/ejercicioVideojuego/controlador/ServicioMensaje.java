@@ -11,8 +11,10 @@ import com.ejercicioVideojuego.modelo.entidad.Videojuego;
 @RestController
 public class ServicioMensaje {
 	
+	//@Autowired injectar el objeto en el controlador
 	@Autowired
 	private Videojuego v1;
+	
 	
 	@GetMapping("videojuego")
 	public Videojuego obtenerVideojuego() {
@@ -30,5 +32,7 @@ public class ServicioMensaje {
 	}
 	
 	
-	//@Autowired para injectarlo en el controlador
+	
+
+	
 }
