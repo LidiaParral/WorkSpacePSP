@@ -30,3 +30,6 @@ Configura el proyecto:
  5)Java version: 8
  6)Language: Java
  7)Package: Nombre del paquete del proyecto
+
+A continuación, activa las casillas Spring Web Services y Spring Web Starter.
+También se pueden activar otras dependiendo de lo que se vaya a utilizar.Pulsa Finish.
