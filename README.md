@@ -32,4 +32,4 @@ Configura el proyecto:
  7) Package: Nombre del paquete del proyecto
 
 A continuación, activa las casillas Spring Web Services y Spring Web Starter.
-También se pueden activar otras dependiendo de lo que se vaya a utilizar.Pulsa Finish.
+También se pueden activar otras dependiendo de lo que se vaya a utilizar. Pulsa ·Finish·.
