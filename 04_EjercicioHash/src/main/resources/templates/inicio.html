@@ -7,8 +7,8 @@
 <body>
 	
 	
-	<p th:text= "'Conectado:' + ${usuario}"></p>
-	<h1>Has iniciado sesion</h1>
+	<h3 style="color: gray;" th:text= "'Usuario conectado: ' + ${usuario}"></h3>
+	<h1 style="color: teal;">Has iniciado sesion</h1>
 	
 	<form action="salida" method="get">
 		<input type="submit" value="cerrarSesion">
