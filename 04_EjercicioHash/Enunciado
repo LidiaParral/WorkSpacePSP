@@ -1,0 +1,11 @@
+ejercicioHash
+
+1 Hacer una aplicacion java o web que registre usuarios y guarde en 
+bbdd la contraseña hasheada.
+
+2 El programa mostrara 2 opciones registar usuario o loguearse, 
+si registramos un usuario, se guardara su username y su password
+Si logueamos un usuario, nos pedira un username y un password y 
+comprobará que la constraseña y el usuario existen
+
+Si existen pasaremos, si no exite no pasaremos a la app
