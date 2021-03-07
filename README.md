@@ -14,7 +14,7 @@ Una vez abierto tienes que importar todos estos proyectos
 raiz donde estan todos estos ejemplos
 3) Hecho esto, se nos deberán cargar todos los proyectos en la parte de "Projects", deberan
 estar todos seleccionados
-4) Pulsamos el boton *"Finish"
+4) Pulsamos el boton *Finish
 5) Debemos de ver todos los proyectos ahora en la pestaña "Project Explorer"
 6) Si algun proyecto aparece con errores, leer su README.md para solucionarlo
 
