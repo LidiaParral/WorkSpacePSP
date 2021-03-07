@@ -17,3 +17,16 @@ estar todos seleccionados
 4) Pulsamos el boton "Finish"
 5) Debemos de ver todos los proyectos ahora en la pestaña "Project Explorer"
 6) Si algun proyecto aparece con errores, leer su README.md para solucionarlo
+
+
+# Spring Boot
+
+Dirígete a File -> New -> Project y elige Spring Boot -> Spring Boot Starter. Presiona Next.
+Configura el proyecto:
+ 1)Service URL: https://start.spring.io
+ 2)Name Nombre del proyecto
+ 3)Type: Maven
+ 4)Packaging: War
+ 5)Java version: 8
+ 6)Language: Java
+ 7)Package: Nombre del paquete del proyecto
