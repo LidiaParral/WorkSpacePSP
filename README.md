@@ -14,16 +14,16 @@ Una vez abierto tienes que importar todos estos proyectos
 raiz donde estan todos estos ejemplos
 3) Hecho esto, se nos deberán cargar todos los proyectos en la parte de "Projects", deberan
 estar todos seleccionados
-4) Pulsamos el boton "Finish"
+4) Pulsamos el boton *"Finish"
 5) Debemos de ver todos los proyectos ahora en la pestaña "Project Explorer"
 6) Si algun proyecto aparece con errores, leer su README.md para solucionarlo
 
 
 # Spring Boot
 
-Dirígete a File -> New -> Project y elige Spring Boot -> Spring Boot Starter. Presiona Next.
+Dirígete a File -> New -> Project y elige Spring Boot -> Spring Boot Starter. Presiona ***Next***.
 Configura el proyecto:
- 1) Service URL: https://start.spring.io
+ 1) Service URL: **https://start.spring.io**
  2) Name Nombre del proyecto
  3) Type: Maven
  4) Packaging: War
@@ -32,4 +32,4 @@ Configura el proyecto:
  7) Package: Nombre del paquete del proyecto
 
 A continuación, activa las casillas Spring Web Services y Spring Web Starter.
-También se pueden activar otras dependiendo de lo que se vaya a utilizar. Pulsa ·Finish·.
+También se pueden activar otras dependiendo de lo que se vaya a utilizar. Pulsa ***Finish**** .
